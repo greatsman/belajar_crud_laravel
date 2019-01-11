@@ -27,3 +27,7 @@ Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');//route untuk hapus
 Route::get('/pegawai_paginate','PegawaiControllerPaginate@index');
 //mencari
 Route::get('/pegawai/cari','PegawaiController@cari');
+
+Route::get('/input', 'MalasngodingController@input');
+ 
+Route::post('/proses', 'MalasngodingController@proses');
