@@ -22,3 +22,8 @@ Route::post('/pegawai/store','PegawaiController@store');//route untuk proses tam
 Route::get('/pegawai/edit/{id}','PegawaiController@edit');//route untuk edit data pegawai
 Route::post('/pegawai/update','PegawaiController@update');//route untuk proses edit data pegawai
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');//route untuk hapus
+
+//paginate
+Route::get('/pegawai_paginate','PegawaiControllerPaginate@index');
+//mencari
+Route::get('/pegawai/cari','PegawaiController@cari');
